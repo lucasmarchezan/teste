@@ -1,0 +1,48 @@
+1- O que é JavaScript?
+ 
+ - JavaScript é uma linguagem de programação usada principalmente para criar interatividade e dinâmica em páginas web. Sua função no desenvolvimento web é possibilitar a manipulação de elementos HTML e CSS, além de permitir a interação com o usuário através de eventos e animações.
+
+2- Qual a diferença entre os três tipos de variáveis em JavaScript (var, let e const)?
+
+ - var: Escopo de função ou global, pode ser re-declarada e modificada.
+
+   let: Escopo de bloco, pode ser modificada, mas não re-declarada no mesmo escopo.
+
+   const: Escopo de bloco, não pode ser modificada nem re-declarada, deve ser inicializada ao ser declarada.
+
+3- O que acontece quando usamos o método prompt()? Qual tipo de dado ele retorna?
+
+  -O método prompt() exibe uma caixa de diálogo que solicita ao usuário que insira um valor. O valor inserido é retornado como uma string. Mesmo que o usuário digite números, o retorno será sempre uma string. 
+
+4- Qual a diferença entre alert(), confirm() e prompt()?
+
+ -alert(): Exibe uma mensagem para o usuário e só permite clicar em "OK".
+
+ -confirm(): Exibe uma mensagem com opções "OK" e "Cancelar", retornando true ou false.
+
+ -prompt(): Exibe uma caixa para o usuário digitar algo, retornando o valor como string ou null se cancelar.
+
+5- Explique o que significa concatenar strings e dê um exemplo utilizando + e template literals.
+
+ -Concatenar strings significa unir duas ou mais cadeias de caracteres em uma única. Isso é feito ao juntar strings, seja utilizando o operador + ou as template literals (literal de template).
+  //exemplo com +
+  let nome = "Lucas";
+  let saudacao = "Olá, " + nome + "!";
+  console.log(saudacao); // dai na saída aparece : "Olá, Lucas!"
+
+  //exemplo com literais
+  let nome = "Lucas";
+  let saudacao = `Olá, ${nome}!`;
+  onsole.log(saudacao); // na saída aparece a mesma coisa: "Olá, Lucas!"
+
+6- Como podemos converter uma string para número em JavaScript? Dê um exemplo prático.
+
+ -let str = "42";
+  let num = Number(str);
+  console.log(num); // Saída: 42
+
+
+
+7- Qual a importância do toFixed(n) quando lidamos com operações matemáticas?
+
+ - O método toFixed(n) em JavaScript é importante porque arredonda um número longo para um número mais plausivel de casas decimais e retorna o valor como uma string, por exemplo o numero 3,77777777 viraria 3,77. Isso é útil em operações matemáticas quando você precisa formatar o resultado de maneira consistente, evitando problemas de precisão em números de ponto flutuante.

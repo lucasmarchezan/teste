@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios praticos</title>
+</head>
+<body>
+    <h1>Exercícios em JavaScript</h1>
+
+    <h2>1. Saudação personalizada</h2>
+    <script>
+        let nome = prompt("Qual é o seu nome?");
+        document.write("<p>Bem-vindo, " + nome + "!</p>");
+    </script>
+
+    <h2>2. Conversão de Temperatura</h2>
+    <script>
+        let celsius = parseFloat(prompt("Digite a temperatura em graus Celsius:"));
+        let fahrenheit = (celsius * 9/5) + 32;
+        document.write("<p>" + celsius + "°C é igual a " + fahrenheit + "°F</p>");
+    </script>
+
+    <h2>3. Calculadora Simples</h2>
+    <script>
+        let num1 = parseFloat(prompt("Digite o primeiro número:"));
+        let num2 = parseFloat(prompt("Digite o segundo número:"));
+
+        let soma = num1 + num2;
+        let subtracao = num1 - num2;
+        let multiplicacao = num1 * num2;
+        let divisao = num1 / num2;
+
+        document.write("<p>Soma: " + soma + "</p>");
+        document.write("<p>Subtração: " + subtracao + "</p>");
+        document.write("<p>Multiplicação: " + multiplicacao + "</p>");
+        document.write("<p>Divisão: " + divisao + "</p>");
+    </script>
+
+    <h2>4. Verificação de Maioridade</h2>
+    <script>
+        let idade = parseInt(prompt("Qual é a sua idade?"));
+
+        if (idade >= 18) {
+            document.write("<p>Você é maior de idade.</p>");
+        } else {
+            document.write("<p>Você é menor de idade.</p>");
+        }
+    </script>
+
+    <h2>5. Cálculo de Desconto</h2>
+    <script>
+        let precoOriginal = parseFloat(prompt("Digite o preço original do produto:"));
+        let descontoPercentual = parseFloat(prompt("Digite a porcentagem de desconto:"));
+        let desconto = (precoOriginal * descontoPercentual) / 100;
+        let precoFinal = precoOriginal - desconto;
+        document.write("<p>Preço final após o desconto: R$ " + precoFinal.toFixed(2) + "</p>");
+    </script>
+
+    <h2>6. Conversão de Moedas</h2>
+    <script>
+        let reais = parseFloat(prompt("Digite o valor em reais (BRL):"));
+        let cotacao = 5.00; // 1 USD = 5 BRL
+        let dolares = reais / cotacao;
+        document.write("<p>Valor em dólares (USD): " + dolares.toFixed(2) + "</p>");
+    </script>
+
+</body>
+</html>
